@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", serif;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(to right, #fe9419, #fd3856);
+}
+
+h2 {
+  font-size: 2.5rem !important;
+}
+
+header {
+  box-shadow: 2px 2px 5px #808080;
+}
+
+header li a {
+  padding: 25px !important;
+  color: #000000 !important;
+  letter-spacing: 0.1rem;
+}
+
+header ul li a.active,
+header li a:hover {
+  background: linear-gradient(#ad5cfc, #175ed2);
+  color: #ffffff !important;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020110;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#000000,#01f7ff,#000000);
+}
+
+/* banner section */
+
+.banner {
+  background: url("images/banner-img.jpg");
+  min-height: 93vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-items {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-content {
+  min-height: 20rem;
+}
+
+.banner-content h2 {
+  max-width: 12rem;
+}
+
+.banner-content p {
+  max-width: 12rem;
+}
+
+.banner-content a {
+  bottom: 2.2rem;
+  right: 1rem;
+}
+
+.banner-item:first-child .banner-content {
+  background: linear-gradient(#fdaf00, #ff8615);
+}
+
+.banner-item:nth-child(2) .banner-content {
+  background: linear-gradient(#bb5afd, #165dd1);
+}
+
+.banner-item:nth-child(3) .banner-content {
+  background: linear-gradient(#ff1c97, #ff2f51);
+}
+
+.banner-item:last-child .banner-content {
+  background: linear-gradient(#b61fe0, #fe13e5);
+}
+
+/* about section */
+.school-section {
+  margin-top: 14rem;
+}
+
+.school-section .about-content {
+  padding-top: 6rem;
+}
+
+.about img{
+  min-width: 49%;
+}
+
+.about-content {
+  max-width: 49%;
+  background-color: #f6f6f6;
+}
+
+/* gallery section */
+.gallery {
+  background: url("images/swimming-bg1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery-content {
+  max-width: 49%;
+  background: linear-gradient(#e00782cb, #e63152d3);
+}
+
+.gallery-content .button {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* events section */
+
+.events li {
+  position: relative;
+  padding: 2px 40px;
+}
+
+.events li::before {
+  content: "\25B6";
+  padding: 3px 7px 4px 8px;
+  border: 1px solid #fffdfd;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 0.8rem;
+}
+
+.event-content {
+  background: linear-gradient(#fcbc15, #fe7d03);
+  min-width: 49%;
+  padding: 3rem;
+}
+
+/* blog section */
+.blogs {
+  margin-top: 8rem;
+}
+
+.blogs-content {
+  padding: 5rem 2rem 2rem 2rem;
+  background-color: #f3f3f3;
+}
+
+.blog-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -160%);
+}
+
+.blog-item span {
+  color: #fa8d4a;
+}
+
+/* footer section */
+
+.contact-info {
+  background: linear-gradient(#007ac7, #009ae0);
+  padding: 4rem;
+  min-width: 49%;
+  max-width: 49%;
+}
+
+.contact-info span {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-right: 6px;
+}
+
+/* hover effects*/
+
+.banner-content a:hover {
+  img {
+    height: 25px;
+    width: 25px;
+    transition: 0.4s ease-in-out;
+  }
+}
+
+.banner-content:hover {
+  background: linear-gradient(#00416a, #799f0c, #ffe000) !important;
+}
+.button:hover {
+  background: #07aed8 !important;
+  transition: 0.3s linear ;
+  color: #ffffff;
+}
